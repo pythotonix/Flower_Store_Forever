@@ -4,13 +4,15 @@ import apps.ucu.edu.ua.forever.model.Flower;
 
 public class RibbonDecorator extends ItemDecorator {
 
+    private static final double RIBBON_COST = 40.0;
+
     public RibbonDecorator(Flower flower) {
         super(flower);
     }
 
     @Override
     public double getPrice() {
-        return 40 + flower.getPrice();
+        return RIBBON_COST + flower.getPrice();
     }
 
     @Override

@@ -4,13 +4,15 @@ import apps.ucu.edu.ua.forever.model.Flower;
 
 public class PaperDecorator extends ItemDecorator {
 
+    private static final double PAPER_COST = 13.0;
+
     public PaperDecorator(Flower flower) {
         super(flower);
     }
 
     @Override
     public double getPrice() {
-        return 13 + flower.getPrice();
+        return PAPER_COST + flower.getPrice();
     }
 
     @Override
