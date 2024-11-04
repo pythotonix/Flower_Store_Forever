@@ -12,11 +12,11 @@ public class PaperDecorator extends ItemDecorator {
 
     @Override
     public double getPrice() {
-        return PAPER_COST + flower.getPrice();
+        return PAPER_COST + getFlower().getPrice();
     }
 
     @Override
     public String getDescription() {
-        return flower.getName() + " wrapped in paper";
+        return getFlower().getName() + " wrapped in paper";
     }
 }

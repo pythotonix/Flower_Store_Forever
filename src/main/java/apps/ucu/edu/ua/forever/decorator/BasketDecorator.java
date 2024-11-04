@@ -12,11 +12,11 @@ public class BasketDecorator extends ItemDecorator {
 
     @Override
     public double getPrice() {
-        return BASKET_COST + flower.getPrice();
+        return BASKET_COST + getFlower().getPrice();
     }
 
     @Override
     public String getDescription() {
-        return flower.getName() + " in a basket";
+        return getFlower().getName() + " in a basket";
     }
 }

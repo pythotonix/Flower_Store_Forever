@@ -13,15 +13,15 @@ class ForeverApplicationTests {
 
     private static final double BASE_PRICE_ROSE = 10.0;
     private static final double RIBBON_COST = 40.0;
-    private static final double EXPECTED_RIBBON_PRICE = BASE_PRICE_ROSE + RIBBON_COST;
+    private static final double E_RIBBON_PRICE=BASE_PRICE_ROSE+RIBBON_COST;
 
     private static final double BASE_PRICE_TULIP = 8.0;
     private static final double PAPER_COST = 13.0;
-    private static final double EXPECTED_PAPER_PRICE = BASE_PRICE_TULIP + PAPER_COST;
+    private static final double E_PAPER_PRICE=BASE_PRICE_TULIP+PAPER_COST;
 
     private static final double BASE_PRICE_LILY = 15.0;
     private static final double BASKET_COST = 4.0;
-    private static final double EXPECTED_BASKET_PRICE = BASE_PRICE_LILY + BASKET_COST;
+    private static final double E_BASKET_PRICE=BASE_PRICE_LILY+BASKET_COST;
 
     @Test
     void contextLoads() {
@@ -36,9 +36,10 @@ class ForeverApplicationTests {
         Flower ribbonedFlower = new RibbonDecorator(flower);
 
         Assertions.assertEquals(
-            EXPECTED_RIBBON_PRICE, 
+            E_RIBBON_PRICE, 
             ribbonedFlower.getPrice(),
-            "Price with ribbon should be " + EXPECTED_RIBBON_PRICE + " (" + BASE_PRICE_ROSE + " + " + RIBBON_COST + ")"
+            "Price with ribbon should be " + E_RIBBON_PRICE 
+            + " (" + BASE_PRICE_ROSE + " + " + RIBBON_COST + ")"
         );
         Assertions.assertEquals(
             "Rose with a ribbon", 
@@ -56,9 +57,10 @@ class ForeverApplicationTests {
         Flower paperWrappedFlower = new PaperDecorator(flower);
 
         Assertions.assertEquals(
-            EXPECTED_PAPER_PRICE, 
+            E_PAPER_PRICE, 
             paperWrappedFlower.getPrice(),
-            "Price with paper should be " + EXPECTED_PAPER_PRICE + " (" + BASE_PRICE_TULIP + " + " + PAPER_COST + ")"
+            "Price with paper should be " + E_PAPER_PRICE 
+            + " (" + BASE_PRICE_TULIP + " + " + PAPER_COST + ")"
         );
         Assertions.assertEquals(
             "Tulip wrapped in paper", 
@@ -76,9 +78,10 @@ class ForeverApplicationTests {
         Flower basketFlower = new BasketDecorator(flower);
 
         Assertions.assertEquals(
-            EXPECTED_BASKET_PRICE, 
+            E_BASKET_PRICE, 
             basketFlower.getPrice(),
-            "Price with basket should be " + EXPECTED_BASKET_PRICE + " (" + BASE_PRICE_LILY + " + " + BASKET_COST + ")"
+            "Price with basket should be " + E_BASKET_PRICE 
+            + " (" + BASE_PRICE_LILY + " + " + BASKET_COST + ")"
         );
         Assertions.assertEquals(
             "Lily in a basket", 

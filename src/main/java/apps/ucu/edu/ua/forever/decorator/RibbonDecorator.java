@@ -12,11 +12,11 @@ public class RibbonDecorator extends ItemDecorator {
 
     @Override
     public double getPrice() {
-        return RIBBON_COST + flower.getPrice();
+        return RIBBON_COST + getFlower().getPrice();
     }
 
     @Override
     public String getDescription() {
-        return flower.getName() + " with a ribbon";
+        return getFlower().getName() + " with a ribbon";
     }
 }
