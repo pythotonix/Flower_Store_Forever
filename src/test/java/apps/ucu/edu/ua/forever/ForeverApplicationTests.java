@@ -13,15 +13,15 @@ class ForeverApplicationTests {
 
     private static final double BASE_PRICE_ROSE = 10.0;
     private static final double RIBBON_COST = 40.0;
-    private static final double E_RIBBON_PRICE=BASE_PRICE_ROSE+RIBBON_COST;
+    private static final double E_RIBBON_PRICE = BASE_PRICE_ROSE + RIBBON_COST;
 
     private static final double BASE_PRICE_TULIP = 8.0;
     private static final double PAPER_COST = 13.0;
-    private static final double E_PAPER_PRICE=BASE_PRICE_TULIP+PAPER_COST;
+    private static final double E_PAPER_PRICE = BASE_PRICE_TULIP + PAPER_COST;
 
     private static final double BASE_PRICE_LILY = 15.0;
     private static final double BASKET_COST = 4.0;
-    private static final double E_BASKET_PRICE=BASE_PRICE_LILY+BASKET_COST;
+    private static final double E_BASKET_PRICE = BASE_PRICE_LILY + BASKET_COST;
 
     @Test
     void contextLoads() {
