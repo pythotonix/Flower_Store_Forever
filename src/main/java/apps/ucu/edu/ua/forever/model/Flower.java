@@ -20,7 +20,6 @@ public class Flower {
     private String color;
     private double price;
     private boolean available;
-    //implement getDescription() method
     public String getDescription() {
         return name + " " + color;
     }

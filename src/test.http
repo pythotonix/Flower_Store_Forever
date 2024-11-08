@@ -1,13 +1,12 @@
 ###
-GET http://localhost:8080/api/v/flower
+GET http://localhost:8080/api/v1/user: 
 
 ###
-POST http://localhost:8080/api/v/flower
+POST http://localhost:8080/api/v1/user: 
 Content-Type: application/json
 
 {
-  "available": true,
-  "color": "blue",
-  "name": "Rosek",
-  "price": 100
+    "email" : "email@email",
+    "age" : 4,
+    "dob" : "2001-01-15",
 }
